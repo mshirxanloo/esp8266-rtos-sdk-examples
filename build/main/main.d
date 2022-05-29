@@ -1,10 +1,15 @@
-main.o: /home/sheraqim/esp/projects/hello_world_2/main/main.c \
+main.o: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/main/main.c \
+ /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h \
+ /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h \
+ /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
+ /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h \
+ /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h \
+ /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/pin_mux_register.h \
+ /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
+ /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/gpio_register.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- /home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
- /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
- /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/projdefs.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/portable.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/deprecated_definitions.h \
@@ -26,7 +31,6 @@ main.o: /home/sheraqim/esp/projects/hello_world_2/main/main.c \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/mpu_wrappers.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps.h \
- /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h \
@@ -35,17 +39,27 @@ main.o: /home/sheraqim/esp/projects/hello_world_2/main/main.c \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_flash/include/esp_spi_flash.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_flash/include/spi_flash.h
 
+/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h:
+
+/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h:
+
+/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h:
+
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h:
+
+/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h:
+
+/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/pin_mux_register.h:
+
+/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h:
+
+/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/gpio_register.h:
+
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-/home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h:
-
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h:
-
-/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h:
-
-/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/projdefs.h:
 
@@ -89,8 +103,6 @@ main.o: /home/sheraqim/esp/projects/hello_world_2/main/main.c \
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps.h:
 
-/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h:
-
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h:
@@ -104,4 +116,4 @@ main.o: /home/sheraqim/esp/projects/hello_world_2/main/main.c \
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_flash/include/esp_spi_flash.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_flash/include/spi_flash.h:
-/home/sheraqim/esp/projects/hello_world_2/main/./main.c:
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/main/./main.c:
