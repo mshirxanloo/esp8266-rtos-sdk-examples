@@ -1,6 +1,6 @@
 src/bootloader_utility.o: \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/bootloader_utility.c \
- /home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h \
+ /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_config.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_flash_data_types.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_utility.h \
@@ -25,7 +25,7 @@ src/bootloader_utility.o: \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h
 
-/home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h:
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_config.h:
 
