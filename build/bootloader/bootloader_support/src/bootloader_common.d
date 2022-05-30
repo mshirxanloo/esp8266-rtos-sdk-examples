@@ -1,6 +1,6 @@
 src/bootloader_common.o: \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/bootloader_common.c \
- /home/sheraqim/esp/projects/hello_world_2/build/bootloader/../include/sdkconfig.h \
+ /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/../include/sdkconfig.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/hal.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
@@ -18,7 +18,7 @@ src/bootloader_common.o: \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/bootloader_common.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_flash_data_types.h
 
-/home/sheraqim/esp/projects/hello_world_2/build/bootloader/../include/sdkconfig.h:
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/../include/sdkconfig.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/hal.h:
 

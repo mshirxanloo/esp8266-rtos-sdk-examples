@@ -17,6 +17,8 @@
 #include "esp_system.h"
 #include "esp_spi_flash.h"
 
+#include "hw.h"
+
 #define GPIO_LED 2
 #define GPIO_LED_PIN_SEL (1ULL << GPIO_LED)
 #define GPIO_BUTTON 5
@@ -25,7 +27,8 @@
 
 static void button_handler(void *arg);
 
-static void init_hw(void) {
+static void init_hw(void)
+{
     gpio_config_t io_conf;
 
     io_conf.mode = GPIO_MODE_OUTPUT;
@@ -43,7 +46,6 @@ static void init_hw(void) {
 
     gpio_install_isr_service(ESP_INTR_FLAG_DEFAULT);
     gpio_isr_handler_add(GPIO_BUTTON, button_handler, NULL);
-
 }
 
 static TickType_t next = 0;
@@ -60,12 +62,11 @@ static void IRAM_ATTR button_handler(void *arg)
     }
 }
 
-
-
 void app_main()
 {
     init_hw();
 
     vTaskSuspend(NULL);
 }
+
 

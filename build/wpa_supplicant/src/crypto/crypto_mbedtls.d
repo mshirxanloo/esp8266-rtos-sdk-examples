@@ -2,7 +2,7 @@ src/crypto/crypto_mbedtls.o: \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/src/crypto/crypto_mbedtls.c \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h \
- /home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h \
+ /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/src/utils/includes.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/port/include/supplicant_opt.h \
@@ -47,7 +47,7 @@ src/crypto/crypto_mbedtls.o: \
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h:
 
-/home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h:
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h:
 

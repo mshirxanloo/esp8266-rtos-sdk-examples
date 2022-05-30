@@ -15,6 +15,7 @@
  /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/fatfs/libfatfs.a
  /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freemodbus/libfreemodbus.a
  /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freertos/libfreertos.a
+ /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/gpio-configurations/libgpio-configurations.a
  /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/heap/libheap.a
  /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/http_parser/libhttp_parser.a
  /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/jsmn/libjsmn.a

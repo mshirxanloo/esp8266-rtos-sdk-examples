@@ -4,7 +4,7 @@ esp-mqtt/lib/platform_esp32_idf.o: \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/lib/include/platform_esp32_idf.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- /home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h \
+ /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h \
@@ -88,7 +88,7 @@ esp-mqtt/lib/platform_esp32_idf.o: \
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-/home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h:
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h:
 

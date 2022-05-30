@@ -16,7 +16,7 @@ port/esp8266/xtensa_vectors.o: \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_context.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_timer.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- /home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h \
+ /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_rtos.h
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/coreasm.h:
@@ -51,7 +51,7 @@ port/esp8266/xtensa_vectors.o: \
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-/home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h:
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_rtos.h:
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/xtensa_vectors.S:
