@@ -1,1 +1,1 @@
-e8618d6-dirty esp8266-rtos-sdk-external-lib v3.4
+27c777c-dirty esp8266-rtos-sdk-external-adc v3.4
