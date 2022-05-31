@@ -5,7 +5,7 @@ common/esp_modbus_master_tcp.o: \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freemodbus/common/include/esp_modbus_common.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- /home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h \
+ /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h \
@@ -48,7 +48,7 @@ common/esp_modbus_master_tcp.o: \
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-/home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h:
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h:
 

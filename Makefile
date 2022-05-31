@@ -3,7 +3,16 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := main
-
+PROJECT_NAME := esp8266-rtos-sdk-external-adc
+#EXTRA_COMPONENT_DIRS := $(IDF_PATH)/examples/system/console/components
 include $(IDF_PATH)/make/project.mk
+
+
+
+
+
+
+
+
+
 

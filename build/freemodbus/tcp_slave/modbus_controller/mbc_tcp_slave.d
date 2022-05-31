@@ -2,7 +2,7 @@ tcp_slave/modbus_controller/mbc_tcp_slave.o: \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freemodbus/tcp_slave/modbus_controller/mbc_tcp_slave.c \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/newlib/platform_include/sys/time.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
- /home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h \
+ /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h \
@@ -80,7 +80,7 @@ tcp_slave/modbus_controller/mbc_tcp_slave.o: \
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h:
 
-/home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h:
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h:
 
