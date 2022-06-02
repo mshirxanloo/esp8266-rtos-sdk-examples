@@ -1,8 +1,9 @@
 idf_component_register(SRCS "main.c"
                             "hw.c"
-                            "adc.c"
+                            "my-adc.c"
+                            "my-gpio.c"
                     INCLUDE_DIRS ".")
 
 
 
-           
+

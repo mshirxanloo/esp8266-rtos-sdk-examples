@@ -8,9 +8,10 @@
 */
 
 #include "hw.h"
-
-
 #include "my-adc.h"
+#include "my-gpio.h"
+
+
 static void adc_task() {
     int x;
     uint16_t adc_data[100];
@@ -27,16 +28,22 @@ static void adc_task() {
         vTaskDelay(1000/portTICK_RATE_MS);
     }
 }
+static void gpio_task() {
+    vTaskSuspend(NULL);
+}
+
 
 
 
 void app_main()
 {
     initialize_adc();
+    initialize_gpio();
     //...................................................................
-
+   
 
     xTaskCreate(adc_task, "adc_task", 1024, NULL, 5, NULL);
+    xTaskCreate(gpio_task, "gpio_task", 2048, NULL, 10, NULL);
 }
 
 

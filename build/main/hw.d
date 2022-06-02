@@ -36,6 +36,7 @@ hw.o: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/main/hw.c \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h \
+ /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_flash/include/esp_spi_flash.h \
@@ -116,6 +117,8 @@ hw.o: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/main/hw.c \
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h:
+
+/home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h:
 

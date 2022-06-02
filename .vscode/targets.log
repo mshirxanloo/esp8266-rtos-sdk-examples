@@ -11,9 +11,8 @@ Python requirements from /home/sheraqim/esp/ESP8266_RTOS_SDK/requirements.txt ar
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Tue May 31 10:04:22 2022
+# Make data base, printed on Thu Jun  2 11:37:21 2022
 
 # Variables
 
@@ -36,6 +35,7 @@ CONFIG_CONSOLE_UART_CUSTOM_NUM_1 =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 611)
 CONFIG_OPTIMIZATION_ASSERTIONS_ENABLED = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 677)
+ 
 CONFIG_ESP32_PTHREAD_TASK_PRIO_DEFAULT = 5
 # environment
 DESKTOP_SESSION = ubuntu
@@ -184,8 +184,7 @@ CONFIG_WPA_11KV_SUPPORT =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 680)
 CONFIG_ESP32_PTHREAD_TASK_NAME_DEFAULT = "pthread"
 # environment
-JOURNAL_STREAM = 8:34674
- 
+JOURNAL_STREAM = 8:34957
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 415)
 CONFIG_LWIP_TCP_OUTPUT_DEBUG = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 172)
@@ -198,6 +197,7 @@ CFLAGS = -std=gnu99 -Og -ggdb -Wno-frame-address -ffunction-sections -fdata-sect
 CONFIG_MQTT_TASK_STACK_SIZE = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 328)
 CONFIG_LWIP_IP4_REASSEMBLY = 
+ 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk', line 42)
 COMPONENT_EMBED_FILES = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 568)
@@ -206,8 +206,8 @@ CONFIG_IP_LOST_TIMER_INTERVAL = 120
 CONFIG_MBEDTLS_PEM_PARSE_C = y
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
-# makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk', line 91)
-COMPILING_COMPONENT_PATH := /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main
+# makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 75)
+CONFIG_ESPTOOLPY_BEFORE_RESET = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 613)
 CONFIG_OPTIMIZATION_ASSERTIONS_DISABLED = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 509)
@@ -385,7 +385,7 @@ compile_only_if_not = $(eval $(if $(1), $(call compile_exclude, $(2)), $(call co
 # environment
 COMPILER_VERSION_STR = 8.4.0
 # environment
-MANAGERPID = 954
+MANAGERPID = 959
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 478)
 CONFIG_MBEDTLS_CAMELLIA_C = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 162)
@@ -458,9 +458,9 @@ CONFIG_LWIP_API_LIB_DEBUG =
 NO_PROXY = 127.0.0.1
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 645)
 CONFIG_MB_TIMER_GROUP = 0
+ 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 436)
 CONFIG_MBEDTLS_SSL_IN_CONTENT_LEN = 16384
- 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 231)
 CONFIG_FATFS_CODEPAGE_737 = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 71)
@@ -538,7 +538,7 @@ CONFIG_LWIP_TCP_WND_DEBUG =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 275)
 CONFIG_FMB_CONTROLLER_NOTIFY_QUEUE_SIZE = 20
 # environment
-SESSION_MANAGER = local/sheraqim-ubuntu-office:@/tmp/.ICE-unix/1238,unix/sheraqim-ubuntu-office:/tmp/.ICE-unix/1238
+SESSION_MANAGER = local/sheraqim-ubuntu-office:@/tmp/.ICE-unix/1307,unix/sheraqim-ubuntu-office:/tmp/.ICE-unix/1307
 # environment
 _ = /snap/code/97/usr/share/code/code
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 423)
@@ -613,6 +613,8 @@ OTA_DATA_SIZE =
 HOSTCC = xtensa-lx106-elf-gcc
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 522)
 CONFIG_MQTT_SSL_DEFAULT_PORT = 
+# makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk', line 91)
+COMPILING_COMPONENT_PATH := /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 286)
 CONFIG_FREERTOS_MAX_HOOK = 2
 # environment
@@ -670,7 +672,7 @@ CONFIG_LWIP_TCP_SND_BUF_DEFAULT = 2880
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 202)
 CONFIG_ESP_CONSOLE_UART_DEFAULT = y
 # environment
-INVOCATION_ID = 58e87d91da7b4adb8e4c4b6e8bed575e
+INVOCATION_ID = 36c569b8b6d94aaf878e84cc6e7a2604
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 681)
 CONFIG_SUPPRESS_SELECT_DEBUG_OUTPUT = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 272)
@@ -732,7 +734,7 @@ CONFIG_FATFS_CODEPAGE_855 =
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 230879
+GIO_LAUNCHED_DESKTOP_FILE_PID = 15681
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 639)
 CONFIG_MB_CONTROLLER_SLAVE_ID_SUPPORT = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 56)
@@ -755,6 +757,7 @@ CONFIG_L2_TO_L3_COPY =
 MAKEFILES := 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 599)
 CONFIG_MONITOR_BAUD_9600B = 
+ 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 502)
 CONFIG_MBEDTLS_ECP_DP_SECP256K1_ENABLED = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 533)
@@ -835,7 +838,6 @@ CONFIG_TARGET_PLATFORM = "esp8266"
 CONFIG_SEMIHOSTFS_MAX_MOUNT_POINTS = 1
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 120)
 CONFIG_ESP_TLS_SERVER = 
- 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/component.mk', line 8)
 LINKER_SCRIPTS := esp8266.bootloader.ld /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/ld/esp8266.rom.ld esp8266.bootloader.rom.ld
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk', line 26)
@@ -857,7 +859,7 @@ CONFIG_ESP_TLS_USING_WOLFSSL =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 385)
 CONFIG_LWIP_BROADCAST_PING = 
 # environment
-SSH_AGENT_PID = 1201
+SSH_AGENT_PID = 1270
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 366)
 CONFIG_LWIP_TCP_RTO_TIME = 3000
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 440)
@@ -1034,6 +1036,7 @@ CONFIG_WL_SECTOR_MODE_PERF =
 CONFIG_LWIP_DNS_SUPPORT_MDNS_QUERIES = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 396)
 CONFIG_LWIP_API_MSG_DEBUG = 
+ 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 348)
 CONFIG_LWIP_MAX_ACTIVE_TCP = 16
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 555)
@@ -1061,7 +1064,7 @@ CONFIG_SPI_FLASH_SIZE = 0x200000
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 372)
 CONFIG_LWIP_TCPIP_TASK_AFFINITY_CPU1 = 
 # environment
-PLATFORMIO_PATH = /home/sheraqim/.platformio/penv/bin:/home/sheraqim/.platformio/penv:/home/sheraqim/.platformio/python3/bin:/home/sheraqim/.local/bin:/home/sheraqim/.nvm/versions/node/v16.15.0/bin:/home/sheraqim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin
+PLATFORMIO_PATH = /home/sheraqim/.platformio/penv/bin:/home/sheraqim/.platformio/penv:/home/sheraqim/.platformio/python3/bin:/home/sheraqim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk', line 245)
 AppendSourceToDependencies = echo "$1:" >> $$(patsubst %.o,%.d,$2)
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 271)
@@ -1132,7 +1135,6 @@ CONFIG_DISABLE_ROM_UART_PRINT =
 CONFIG_SPI_FLASH_MODE = 0x0
 # environment
 MAKEOVERRIDES = ${-*-command-variables-*-}
- 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 342)
 CONFIG_LWIP_AUTOIP_TRIES = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 241)
@@ -1146,7 +1148,7 @@ CONFIG_ESPTOOLPY_FLASHMODE_DOUT =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 500)
 CONFIG_MBEDTLS_ECP_DP_SECP192K1_ENABLED = y
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e5e6b6e2-c09d-401f-92f7-7eadf65f2c67.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-730e7b56-7a3e-4ab6-ba43-c292996c41c8.sock
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk', line 83)
 prereq_if_explicit = $(filter $(1),$(MAKECMDGOALS))
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 8)
@@ -1296,6 +1298,7 @@ CONFIG_MBEDTLS_KEY_EXCHANGE_DHE_RSA = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 43)
 CONFIG_FLASH_ENCRYPTION_UART_BOOTLOADER_ALLOW_ENCRYPT = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 57)
+ 
 CONFIG_ESPTOOLPY_FLASHMODE_QOUT = 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk', line 155)
 COMPONENT_PRIV_INCLUDEDIRS = 
@@ -1437,8 +1440,8 @@ CONFIG_LWIP_TCP_QLEN_DEBUG =
 APP_OFFSET = 
 # environment
 LC_PAPER = az_IR
-# makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 75)
-CONFIG_ESPTOOLPY_BEFORE_RESET = y
+# environment
+NO_AT_BRIDGE = 1
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 433)
 CONFIG_MBEDTLS_CUSTOM_MEM_ALLOC = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 392)
@@ -1520,7 +1523,6 @@ COMMON_MAKEFILES = /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/she
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 300)
 CONFIG_FREERTOS_RUN_TIME_STATS_USING_CPU_CLK = 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk', line 50)
- 
 dequote = $(subst ",,$(1))
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 171)
 CONFIG_ESP8266_WIFI_DEBUG_LOG_WARNING = 
@@ -1574,6 +1576,7 @@ CONFIG_WPA_TESTING_OPTIONS =
 CONFIG_WL_SECTOR_MODE = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 220)
 CONFIG_ESP_GDBSTUB_MAX_TASKS = 
+ 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk', line 145)
 COMPONENT_OBJS := ./bootloader_start.o 
 # environment
@@ -1708,7 +1711,7 @@ CONFIG_MBEDTLS_ECP_DP_CURVE25519_ENABLED = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 135)
 CONFIG_ESP_FILENAME_MACRO_NULL = 
 # environment
-PATH = /home/sheraqim/.local/bin:/home/sheraqim/.nvm/versions/node/v16.15.0/bin:/home/sheraqim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin
+PATH = /home/sheraqim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 164)
 CONFIG_ESP8266_WIFI_RX_PKT_NUM = 7
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 177)
@@ -1845,7 +1848,6 @@ CONFIG_FATFS_ALLOC_PREFER_EXTRAM =
 HOSTOBJCOPY = xtensa-lx106-elf-objcopy
 # environment
 GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
- 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 407)
 CONFIG_LWIP_SYS_DEBUG = 
 # environment
@@ -1873,7 +1875,7 @@ CONFIG_WIFI_PROV_AUTOSTOP_TIMEOUT =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 208)
 CONFIG_ESP_CONSOLE_UART_BAUDRATE = 74880
 # environment
-VSCODE_PID = 230927
+VSCODE_PID = 8156
 # command line
 COMPONENT_MAKEFILE = /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/component.mk
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 70)
@@ -1905,7 +1907,8 @@ CONFIG_FMB_TIMER_ISR_IN_IRAM =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 295)
 CONFIG_ENABLE_FREERTOS_SLEEP = 
 # variable set hash-table stats:
-# Load=910/1024=89%, Rehash=0, Collisions=2141/1103=194%
+ 
+# Load=911/1024=89%, Rehash=0, Collisions=2154/1104=195%
 
 # Pattern-specific Variable Values
 
@@ -1913,7 +1916,7 @@ CONFIG_ENABLE_FREERTOS_SLEEP =
 
 # Directories
 
-# . (device 2049, inode 8259739): No files, no impossibilities so far.
+# . (device 2049, inode 8388922): No files, no impossibilities so far.
 # /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/. (device 2049, inode 7867044): 7 files, no impossibilities.
 # /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main (device 2049, inode 7867044): 7 files, no impossibilities.
 # /home/sheraqim/esp/ESP8266_RTOS_SDK/make (device 2049, inode 11825013): 2 files, no impossibilities so far.
@@ -1954,7 +1957,7 @@ CONFIG_ENABLE_FREERTOS_SLEEP =
 bootloader_start.o: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/./bootloader_start.c /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/Makefile /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/bootloader_start.c /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/../include/sdkconfig.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_config.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_flash_data_types.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_init.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_utility.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_image_format.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_flash_partitions.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_flash_data_types.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/bootloader_common.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_flash/include/esp_spi_flash.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_flash/include/spi_flash.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h /home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'bootloader_start'
-#  Last modified 2022-05-30 16:10:06.441006835
+#  Last modified 2022-05-31 16:53:37.038580179
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # automatic
@@ -1982,7 +1985,7 @@ bootloader_start.o: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/su
 
 .:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:06.441006835
+#  Last modified 2022-05-31 16:53:37.042580138
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk', line 291):
@@ -2040,7 +2043,7 @@ bootloader_start.o: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/su
 # Not a target:
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-31 10:03:54.948776949
+#  Last modified 2022-06-02 11:36:53.165104654
 #  File has been updated.
 #  Successfully updated.
 
@@ -2059,7 +2062,7 @@ bootloader_start.o: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/su
 
 libmain.a: bootloader_start.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:06.441006835
+#  Last modified 2022-05-31 16:53:37.042580138
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
@@ -2088,7 +2091,7 @@ build: libmain.a
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/../include/sdkconfig.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-31 10:03:54.948776949
+#  Last modified 2022-06-02 11:36:53.165104654
 #  File has been updated.
 #  Successfully updated.
 
@@ -2167,12 +2170,12 @@ clean:
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h:
 #  Implicit rule search has been done.
 #  Last modified 2022-05-29 10:37:56.381220344
+ 
 #  File has been updated.
 #  Successfully updated.
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-05-29 10:37:56.505213687
 #  File has been updated.
 #  Successfully updated.
@@ -2180,7 +2183,7 @@ clean:
 # Not a target:
 bootloader_start.d:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-30 16:10:06.441006835
+#  Last modified 2022-05-31 16:53:37.038580179
 #  File has been updated.
 #  Successfully updated.
 
@@ -2239,7 +2242,7 @@ component_project_vars.mk::
 # strcache performance: lookups = 167 / hit rate = 65%
 # hash-table stats:
 # Load=58/8192=1%, Rehash=0, Collisions=20/167=12%
-# Finished Make data base on Tue May 31 10:04:22 2022
+# Finished Make data base on Thu Jun  2 11:37:21 2022
 
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
@@ -2248,10 +2251,11 @@ component_project_vars.mk::
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue May 31 10:04:22 2022
+# Make data base, printed on Thu Jun  2 11:37:21 2022
 
 # Variables
 
+ 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 106)
 CONFIG_COMPILER_STACK_CHECK_MODE_STRONG = 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk', line 91)
@@ -2466,14 +2470,13 @@ CONFIG_WPA_11KV_SUPPORT =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 680)
 CONFIG_ESP32_PTHREAD_TASK_NAME_DEFAULT = "pthread"
 # environment
-JOURNAL_STREAM = 8:34674
+JOURNAL_STREAM = 8:34957
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 415)
 CONFIG_LWIP_TCP_OUTPUT_DEBUG = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 172)
 CONFIG_ESP8266_WIFI_DEBUG_LOG_INFO = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 678)
 CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT = 3072
- 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild', line 80)
 CFLAGS := -std=gnu99 -Og -ggdb -Wno-frame-address -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -mlongcalls -nostdlib -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-old-style-declaration -I /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp8266 -I /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/include -D BOOTLOADER_BUILD=1 -I/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/../include -DICACHE_FLASH -D__ESP_FILE__='"$$(subst $$(dir $$<),,$$<)"'
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 526)
@@ -2488,8 +2491,8 @@ CONFIG_IP_LOST_TIMER_INTERVAL = 120
 CONFIG_MBEDTLS_PEM_PARSE_C = y
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
-# makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/esp8266/component_project_vars.mk', line 4)
-COMPONENT_LINKER_DEPS = $(PROJECT_PATH)/main/esp8266.bootloader.ld $(IDF_PATH)/components/esp8266/ld/esp8266.rom.ld $(PROJECT_PATH)/main/esp8266.bootloader.rom.ld    
+# makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 75)
+CONFIG_ESPTOOLPY_BEFORE_RESET = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 613)
 CONFIG_OPTIMIZATION_ASSERTIONS_DISABLED = 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/Makefile.projbuild', line 34)
@@ -2656,6 +2659,7 @@ CONFIG_LWIP_GARP_TMR_INTERVAL = 60
 PROJECT_VER = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 126)
 CONFIG_ESP8266_NMI_WDT = y
+ 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 321)
 CONFIG_LWIP_SO_LINGER = 
 # command line
@@ -2685,7 +2689,7 @@ CPPFLAGS := -DESP_PLATFORM -D IDF_VER=\"v3.4\" -MMD -MP -DESP_PLATFORM -D IDF_VE
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 470)
 COMPILER_VERSION_STR := 8.4.0
 # environment
-MANAGERPID = 954
+MANAGERPID = 959
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 478)
 CONFIG_MBEDTLS_CAMELLIA_C = 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/Makefile.projbuild', line 6)
@@ -2726,7 +2730,6 @@ CONFIG_LWIP_ETHARP_TRUST_IP_MAC =
 CONFIG_ESPTOOLPY_MONITOR_BAUD = 74880
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 368)
 CONFIG_LWIP_UDP_RECVMBOX_SIZE = 6
- 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 290)
 CONFIG_FREERTOS_GLOBAL_DATA_LINK_IRAM = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 200)
@@ -2826,7 +2829,7 @@ CONFIG_LWIP_TCP_WND_DEBUG =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 275)
 CONFIG_FMB_CONTROLLER_NOTIFY_QUEUE_SIZE = 20
 # environment
-SESSION_MANAGER = local/sheraqim-ubuntu-office:@/tmp/.ICE-unix/1238,unix/sheraqim-ubuntu-office:/tmp/.ICE-unix/1238
+SESSION_MANAGER = local/sheraqim-ubuntu-office:@/tmp/.ICE-unix/1307,unix/sheraqim-ubuntu-office:/tmp/.ICE-unix/1307
 # environment
 _ = /snap/code/97/usr/share/code/code
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 423)
@@ -2976,7 +2979,7 @@ CONFIG_LWIP_TCP_SND_BUF_DEFAULT = 2880
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 202)
 CONFIG_ESP_CONSOLE_UART_DEFAULT = y
 # environment
-INVOCATION_ID = 58e87d91da7b4adb8e4c4b6e8bed575e
+INVOCATION_ID = 36c569b8b6d94aaf878e84cc6e7a2604
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 681)
 CONFIG_SUPPRESS_SELECT_DEBUG_OUTPUT = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 272)
@@ -3020,6 +3023,7 @@ LS_COLORS =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 14)
 CONFIG_LOG_BOOTLOADER_LEVEL_ERROR = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 654)
+ 
 CONFIG_TCP_MSS = 1440
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 486)
 CONFIG_MBEDTLS_GCM_C = y
@@ -3038,9 +3042,8 @@ CONFIG_FATFS_CODEPAGE_855 =
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 230879
+GIO_LAUNCHED_DESKTOP_FILE_PID = 15681
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 639)
- 
 CONFIG_MB_CONTROLLER_SLAVE_ID_SUPPORT = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 56)
 CONFIG_ESPTOOLPY_FLASHMODE_QIO = y
@@ -3167,7 +3170,7 @@ CONFIG_ESP_TLS_USING_WOLFSSL =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 385)
 CONFIG_LWIP_BROADCAST_PING = 
 # environment
-SSH_AGENT_PID = 1201
+SSH_AGENT_PID = 1270
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 366)
 CONFIG_LWIP_TCP_RTO_TIME = 3000
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 440)
@@ -3299,6 +3302,7 @@ MONITOR_OPTS := --baud 74880 --port "/dev/ttyUSB0" --toolchain-prefix "xtensa-lx
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 466)
 CONFIG_MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 36)
+ 
 CONFIG_SECURE_BOOT_SIGNING_KEY = ""
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 381)
 CONFIG_LWIP_PPP_MSCHAP_SUPPORT = 
@@ -3322,7 +3326,6 @@ CONFIG_SPIFFS_CACHE_STATS =
 stripLeadingParentDirs = $(foreach path,$(1),$(if $(subst ..,,$(path)),$(if $(filter ../%,$(path)),$(call stripLeadingParentDirs,$(patsubst ../%,%,$(path))),$(path)),.))
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 108)
 CONFIG_COMPILER_STACK_CHECK = 
- 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 646)
 CONFIG_MB_TIMER_INDEX = 0
 # environment
@@ -3376,7 +3379,7 @@ CONFIG_SPI_FLASH_SIZE = 0x200000
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 372)
 CONFIG_LWIP_TCPIP_TASK_AFFINITY_CPU1 = 
 # environment
-PLATFORMIO_PATH = /home/sheraqim/.platformio/penv/bin:/home/sheraqim/.platformio/penv:/home/sheraqim/.platformio/python3/bin:/home/sheraqim/.local/bin:/home/sheraqim/.nvm/versions/node/v16.15.0/bin:/home/sheraqim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin
+PLATFORMIO_PATH = /home/sheraqim/.platformio/penv/bin:/home/sheraqim/.platformio/penv:/home/sheraqim/.platformio/python3/bin:/home/sheraqim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 163)
 MULTI_COMPONENT_DIRS := /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/components /home/sheraqim/esp/ESP8266_RTOS_SDK/components
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 271)
@@ -3396,7 +3399,7 @@ MAKECMDGOALS := /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/boot
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 616)
 CONFIG_STACK_CHECK_NORM = 
 # environment
-PATH = /home/sheraqim/.local/bin:/home/sheraqim/.nvm/versions/node/v16.15.0/bin:/home/sheraqim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin
+PATH = /home/sheraqim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 359)
 CONFIG_LWIP_TCP_SACK_OUT = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 142)
@@ -3464,7 +3467,7 @@ CONFIG_ESPTOOLPY_FLASHMODE_DOUT =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 500)
 CONFIG_MBEDTLS_ECP_DP_SECP192K1_ENABLED = y
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e5e6b6e2-c09d-401f-92f7-7eadf65f2c67.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-730e7b56-7a3e-4ab6-ba43-c292996c41c8.sock
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk', line 83)
 prereq_if_explicit = $(filter $(1),$(MAKECMDGOALS))
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 8)
@@ -3599,6 +3602,7 @@ CONFIG_LWIP_IPV4_NAPT =
 CONFIG_MBEDTLS_ECDSA_C = y
 # command line
 TEST_COMPONENTS = 
+ 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 400)
 CONFIG_LWIP_INET_DEBUG = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 548)
@@ -3627,7 +3631,6 @@ CONFIG_BOOTLOADER_DATA_FACTORY_RESET = ""
 CONFIG_WARN_WRITE_STRINGS = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 166)
 CONFIG_ESP8266_WIFI_NVS_ENABLED = y
- 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 638)
 CONFIG_MB_SERIAL_TASK_PRIO = 10
 # default
@@ -3756,8 +3759,8 @@ CONFIG_LWIP_TCP_QLEN_DEBUG =
 APP_OFFSET = 
 # environment
 LC_PAPER = az_IR
-# makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 75)
-CONFIG_ESPTOOLPY_BEFORE_RESET = y
+# environment
+NO_AT_BRIDGE = 1
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 433)
 CONFIG_MBEDTLS_CUSTOM_MEM_ALLOC = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 392)
@@ -3898,12 +3901,12 @@ CONFIG_MAIN_TASK_STACK_SIZE = 3584
 CONFIG_LWIP_TCP_FR_DEBUG = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 579)
 CONFIG_WL_SECTOR_MODE = 
+ 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 571)
 CONFIG_VFS_SUPPORT_TERMIOS = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 220)
 CONFIG_ESP_GDBSTUB_MAX_TASKS = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/esp8266/component_project_vars.mk', line 3)
- 
 COMPONENT_LDFLAGS :=  -L/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/main -lmain -L /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib -lcore -L /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main -T esp8266.bootloader.ld -T /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/ld/esp8266.rom.ld -T esp8266.bootloader.rom.ld -L/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/bootloader_support -lbootloader_support -L/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/spi_flash -lspi_flash -L/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/log -llog -L/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/esp8266 -lesp8266
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 462)
 CXX := xtensa-lx106-elf-c++
@@ -3933,6 +3936,8 @@ COMMON_FLAGS = -Wno-frame-address -ffunction-sections -fdata-sections -fstrict-v
 CONFIG_LWIP_TCP_TXRX_PBUF_DEBUG = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 329)
 CONFIG_LWIP_IP6_REASSEMBLY = 
+# makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 533)
+ComponentMake = +$(MAKE) -C $(BUILD_DIR_BASE)/$(2) -f $(IDF_PATH)/make/component_wrapper.mk COMPONENT_MAKEFILE=$(1)/component.mk COMPONENT_NAME=$(2)
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 536)
 CONFIG_NEWLIB_NANO_FORMAT = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 222)
@@ -3943,8 +3948,8 @@ CONFIG_FATFS_CODEPAGE_775 =
 LC_ALL = C
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 270)
 CONFIG_FMB_SERIAL_BUF_SIZE = 256
-# makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 533)
-ComponentMake = +$(MAKE) -C $(BUILD_DIR_BASE)/$(2) -f $(IDF_PATH)/make/component_wrapper.mk COMPONENT_MAKEFILE=$(1)/component.mk COMPONENT_NAME=$(2)
+# makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/esp8266/component_project_vars.mk', line 4)
+COMPONENT_LINKER_DEPS = $(PROJECT_PATH)/main/esp8266.bootloader.ld $(IDF_PATH)/components/esp8266/ld/esp8266.rom.ld $(PROJECT_PATH)/main/esp8266.bootloader.rom.ld    
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 303)
 CONFIG_HEAP_TRACING = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 203)
@@ -4134,6 +4139,7 @@ CONFIG_NEWLIB_STDOUT_LINE_ENDING_CR =
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 480)
 APP_ELF := /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/bootloader.elf
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 542)
+ 
 CONFIG_OPENSSL_ASSERT_DEBUG = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 88)
 CONFIG_ESPTOOLPY_MONITOR_BAUD_2MB = 
@@ -4178,10 +4184,9 @@ EXCLUDE_COMPONENTS =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 582)
 CONFIG_WIFI_PROV_AUTOSTOP_TIMEOUT = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 208)
- 
 CONFIG_ESP_CONSOLE_UART_BAUDRATE = 74880
 # environment
-VSCODE_PID = 230927
+VSCODE_PID = 8156
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 248)
 CONFIG_FATFS_CODEPAGE_949 = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 70)
@@ -4217,7 +4222,7 @@ CONFIG_ENABLE_FREERTOS_SLEEP =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 650)
 CONFIG_GARP_TMR_INTERVAL = 60
 # variable set hash-table stats:
-# Load=950/1024=93%, Rehash=0, Collisions=3388/1775=191%
+# Load=951/1024=93%, Rehash=0, Collisions=4079/1776=230%
 
 # Pattern-specific Variable Values
 
@@ -4254,7 +4259,7 @@ config-clean: app-clean bootloader-clean
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/log:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:07.009002089
+#  Last modified 2022-05-31 16:53:37.694573374
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -4278,7 +4283,7 @@ ota: build/bootloader.ota.bin
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/main/libmain.a: component-main-build
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:06.441006835
+#  Last modified 2022-05-31 16:53:37.042580138
 #  File has not been updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/5=0%
@@ -4303,7 +4308,7 @@ all: all_binaries | check_python_dependencies
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/bootloader_support:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:06.813003727
+#  Last modified 2022-05-31 16:53:37.466575739
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -4311,7 +4316,7 @@ all: all_binaries | check_python_dependencies
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/main/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/main
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:56.180766562
+#  Last modified 2022-06-02 11:36:56.541025449
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -4364,7 +4369,7 @@ monitor:
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/bootloader.elf: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/main/libmain.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/bootloader_support/libbootloader_support.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/spi_flash/libspi_flash.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/log/liblog.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/esp8266/libesp8266.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/esp8266.bootloader.ld /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/ld/esp8266.rom.ld /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/esp8266.bootloader.rom.ld /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/esptool_py/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/main/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/bootloader_support/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/spi_flash/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/log/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/esp8266/component_project_vars.mk
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:07.109001255
+#  Last modified 2022-05-31 16:53:37.830571964
 #  File has not been updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/5=0%
@@ -4374,7 +4379,7 @@ monitor:
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/esp8266:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:07.081001488
+#  Last modified 2022-05-31 16:53:37.798572297
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -4391,7 +4396,6 @@ build/bootloader.app1.bin: all_binaries
 
 # Not a target:
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/Makefile.projbuild:
- 
 #  Implicit rule search has been done.
 #  Last modified 2022-05-29 10:37:56.345222279
 #  File has been updated.
@@ -4408,9 +4412,10 @@ component-bootloader_support-clean: | /home/sheraqim/esp/projects/esp8266-rtos-s
 # Not a target:
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-31 10:03:54.948776949
+#  Last modified 2022-06-02 11:36:53.165104654
 #  File has been updated.
 #  Successfully updated.
+ 
 
 app-clean: component-esptool_py-clean component-main-clean component-bootloader_support-clean component-spi_flash-clean component-log-clean component-esp8266-clean
 #  Implicit rule search has not been done.
@@ -4469,7 +4474,7 @@ Makefile:
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/log/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/log
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:56.080767406
+#  Last modified 2022-06-02 11:36:56.497026478
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -4484,7 +4489,7 @@ Makefile:
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/spi_flash:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:06.965002457
+#  Last modified 2022-05-31 16:53:37.646573872
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -4548,7 +4553,7 @@ print_flash_cmd: partition_table_get_info blank_ota_data
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/bootloader_support/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/bootloader_support
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:56.152766799
+#  Last modified 2022-06-02 11:36:56.525025823
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -4589,7 +4594,7 @@ check_python_dependencies:
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/esptool_py:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 13:27:52.319063894
+#  Last modified 2022-05-31 16:53:36.96258097
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -4662,7 +4667,6 @@ component-esptool_py-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examp
 #  Last modified 2022-05-29 10:37:56.505213687
 #  File has been updated.
 #  Successfully updated.
- 
 
 help:
 #  Implicit rule search has not been done.
@@ -4738,8 +4742,9 @@ component-main-build: check-submodules make_prepare | /home/sheraqim/esp/project
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/main -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/component.mk COMPONENT_NAME=main build
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/esp8266/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/esp8266
+ 
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:56.056767607
+#  Last modified 2022-06-02 11:36:56.481026851
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -4748,7 +4753,7 @@ component-main-build: check-submodules make_prepare | /home/sheraqim/esp/project
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/bootloader.bin: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/bootloader.elf /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/esptool/esptool.py
 #  Command line target.
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:07.153000887
+#  Last modified 2022-05-31 16:53:37.878571465
 #  File has not been updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/5=0%
@@ -4772,7 +4777,7 @@ size-symbols: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootlo
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/spi_flash/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_flash/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/spi_flash
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:56.116767101
+#  Last modified 2022-06-02 11:36:56.509026198
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -4792,7 +4797,7 @@ size-symbols: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootlo
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/esptool_py/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/esptool_py
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:56.188766494
+#  Last modified 2022-06-02 11:36:56.549025263
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -4868,7 +4873,6 @@ app2-flash-all: app2
 #  File has not been updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild', line 121):
 	@$(ESPTOOLPY_WRITE_FLASH) $(patsubst $(APP_OFFSET),$(APP2_OFFSET),$(ESPTOOL_ALL_FLASH_ARGS))
- 
 
 component-bootloader_support-build: check-submodules make_prepare | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/bootloader_support
 #  Phony target (prerequisite of .PHONY).
@@ -4954,7 +4958,7 @@ build-components:
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/main:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:06.441006835
+#  Last modified 2022-05-31 16:53:37.042580138
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -5010,10 +5014,11 @@ ota-clean:
 # strcache buffers: 1 (0) / strings = 103 / storage = 4402 B / avg = 42 B
 # current buf: size = 8162 B / used = 4402 B / count = 103 / avg = 42 B
 
+ 
 # strcache performance: lookups = 378 / hit rate = 72%
 # hash-table stats:
 # Load=103/8192=1%, Rehash=0, Collisions=13/378=3%
-# Finished Make data base on Tue May 31 10:04:22 2022
+# Finished Make data base on Thu Jun  2 11:37:21 2022
 
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
@@ -5022,7 +5027,7 @@ ota-clean:
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue May 31 10:04:22 2022
+# Make data base, printed on Thu Jun  2 11:37:21 2022
 
 # Variables
 
@@ -5085,6 +5090,7 @@ CURRENT_TOOLCHAIN_GCC_VERSION = 8.4.0
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 302)
 CONFIG_HEAP_DISABLE_IRAM = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 240)
+ 
 CONFIG_FATFS_CODEPAGE_862 = 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 498)
 COMPONENT_PATH := /home/sheraqim/esp/ESP8266_RTOS_SDK/components/partition_table
@@ -5113,7 +5119,7 @@ V = $(VERBOSE)
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wpa_supplicant/component_project_vars.mk', line 7)
 COMPONENT_LDFRAGMENTS :=        /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/ld/esp8266_fragments.lf /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/ld/esp8266_bss_fragments.lf /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/linker.lf          /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/linker.lf       /home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/linker.lf /home/sheraqim/esp/ESP8266_RTOS_SDK/components/lwip/linker.lf           /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_flash/linker.lf        
 # environment
-JOURNAL_STREAM = 8:34674
+JOURNAL_STREAM = 8:34957
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 328)
 CONFIG_LWIP_IP4_REASSEMBLY = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 527)
@@ -5122,7 +5128,6 @@ CONFIG_MQTT_DISABLE_API_LOCKS =
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 55)
 NON_INTERACTIVE_TARGET = defconfig clean% %clean help list-components print_flash_cmd check_python_dependencies
- 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 357)
 CONFIG_LWIP_TCP_RECVMBOX_SIZE = 6
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 317)
@@ -5226,7 +5231,7 @@ CONFIG_MBEDTLS_X509_CRL_PARSE_C = y
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 470)
 COMPILER_VERSION_STR := 8.4.0
 # environment
-MANAGERPID = 954
+MANAGERPID = 959
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 209)
 TEST_COMPONENTS = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 162)
@@ -5315,7 +5320,7 @@ CONFIG_LWIP_PPP_ENABLE_IPV6 =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 656)
 CONFIG_TCP_SND_BUF_DEFAULT = 2880
 # environment
-SESSION_MANAGER = local/sheraqim-ubuntu-office:@/tmp/.ICE-unix/1238,unix/sheraqim-ubuntu-office:/tmp/.ICE-unix/1238
+SESSION_MANAGER = local/sheraqim-ubuntu-office:@/tmp/.ICE-unix/1307,unix/sheraqim-ubuntu-office:/tmp/.ICE-unix/1307
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 402)
 CONFIG_LWIP_IP_DEBUG = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 423)
@@ -5331,7 +5336,6 @@ LC_NUMERIC = az_IR
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 455)
 ARFLAGS := cru
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 311)
- 
 COMPONENT_INCLUDES :=  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/app_update/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/coap/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/console /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp-tls /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp-tls/private_include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp-wolfssl/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_event/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_gdbstub/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_http_client/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_http_server/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_https_ota/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_ringbuf/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_ringbuf/include/freertos /home/sheraqim/esp/ESP8266_RTOS_SDK/components/fatfs/diskio /home/sheraqim/esp/ESP8266_RTOS_SDK/components/fatfs/vfs /home/sheraqim/esp/ESP8266_RTOS_SDK/components/fatfs/src /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freemodbus/common/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/components/gpio-configurations /home/sheraqim/esp/ESP8266_RTOS_SDK/components/heap/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/http_parser/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/jsmn/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/json/cJSON /home/sheraqim/esp/ESP8266_RTOS_SDK/components/libsodium/libsodium/src/libsodium/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/libsodium/port_include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/lwip/include/apps /home/sheraqim/esp/ESP8266_RTOS_SDK/components/lwip/include/apps/sntp /home/sheraqim/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/arch /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/main/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp8266 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mdns/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/newlib/platform_include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/nvs_flash/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/openssl/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/protobuf-c/protobuf-c  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/pthread/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_flash/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_ram/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spiffs/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/tcp_transport/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/vfs/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/wear_levelling/include  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/port/include /home/sheraqim/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/include/esp_supplicant /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include
 # environment
 SNAP = /snap/code/97
@@ -5422,7 +5426,7 @@ CONFIG_MBEDTLS_DYNAMIC_FREE_CONFIG_DATA =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 616)
 CONFIG_STACK_CHECK_NORM = 
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 230879
+GIO_LAUNCHED_DESKTOP_FILE_PID = 15681
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/Makefile.projbuild', line 19)
 ENABLE_SAVELOG := n
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 277)
@@ -5449,6 +5453,7 @@ CONFIG_LWIP_MAX_UDP_PCBS = 16
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 235)
 HOSTAR := ar
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 388)
+ 
 CONFIG_LWIP_DHCP_MAX_NTP_SERVERS = 1
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 442)
 CONFIG_MBEDTLS_DEBUG_LEVEL_WARN = 
@@ -5469,7 +5474,7 @@ CONFIG_MQTT_BUFFER_SIZE =
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 366)
 PROJECT_VER = 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 481)
-APP_MAP := /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc.map
+APP_MAP := /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc-gpio.map
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 120)
 CONFIG_ESP_TLS_SERVER = 
 # default
@@ -5481,7 +5486,7 @@ CONFIG_MBEDTLS_SSL_ALPN = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 644)
 CONFIG_MB_EVENT_QUEUE_TIMEOUT = 20
 # environment
-SSH_AGENT_PID = 1201
+SSH_AGENT_PID = 1270
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 681)
 CONFIG_SUPPRESS_SELECT_DEBUG_OUTPUT = y
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/Makefile.projbuild', line 6)
@@ -5617,20 +5622,17 @@ CONFIG_WIFI_PROV_AUTOSTOP_TIMEOUT =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 85)
 CONFIG_ESPTOOLPY_MONITOR_BAUD_115200B = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wpa_supplicant/component_project_vars.mk', line 6)
- 
 COMPONENT_LIBRARIES :=  app_update bootloader_support coap console esp-tls esp-wolfssl esp8266 esp_common esp_event esp_gdbstub esp_http_client esp_http_server esp_https_ota esp_ringbuf fatfs freemodbus freertos gpio-configurations heap http_parser jsmn json libsodium log lwip main mbedtls mdns mqtt newlib nvs_flash openssl protobuf-c protocomm pthread spi_flash spi_ram spiffs tcp_transport tcpip_adapter vfs wear_levelling wifi_provisioning wpa_supplicant
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 262)
 CONFIG_FMB_COMM_MODE_TCP_EN = y
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/app_update/Makefile.projbuild', line 5)
 OTATOOL_PY := python /home/sheraqim/esp/ESP8266_RTOS_SDK/components/app_update/otatool.py
-# makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 392)
-CONFIG_LWIP_ETHARP_DEBUG = 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/Makefile.projbuild', line 31)
 ESPTOOLPY_SERIAL := python /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/esptool/esptool.py --chip esp8266 --port "/dev/ttyUSB0" --baud 115200 --before "default_reset" --after "hard_reset"
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 572)
 CONFIG_SEMIHOSTFS_MAX_MOUNT_POINTS = 1
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e5e6b6e2-c09d-401f-92f7-7eadf65f2c67.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-730e7b56-7a3e-4ab6-ba43-c292996c41c8.sock
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 217)
 CONFIG_ESP_EVENT_POST_FROM_ISR = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 52)
@@ -5742,6 +5744,7 @@ CONFIG_LWIP_DEBUG =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 313)
 CONFIG_LOG_SET_LEVEL = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 65)
+ 
 CONFIG_ESPTOOLPY_FLASHFREQ_20M = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 526)
 CONFIG_MQTT_TASK_STACK_SIZE = 
@@ -5828,11 +5831,13 @@ CONFIG_PPP_PAP_SUPPORT =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 484)
 CONFIG_MBEDTLS_XTEA_C = 
 # environment
-VSCODE_PID = 230927
+VSCODE_PID = 8156
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 592)
 CONFIG_TARGET_PLATFORM = "esp8266"
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/app_update/Makefile.projbuild', line 14)
 PARTITION_TABLE_ROOT := /home/sheraqim/esp/ESP8266_RTOS_SDK/components/partition_table
+# environment
+NO_AT_BRIDGE = 1
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 641)
 CONFIG_MB_CONTROLLER_NOTIFY_TIMEOUT = 20
 # default
@@ -5870,7 +5875,7 @@ CONFIG_SECURE_BOOT_TEST_MODE =
 # environment
 SNAP_NAME = code
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild', line 97)
-OTA_BIN := ./build/esp8266-rtos-sdk-external-adc.ota.bin
+OTA_BIN := ./build/esp8266-rtos-sdk-external-adc-gpio.ota.bin
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 386)
 COMMON_FLAGS = -Wno-frame-address -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -mlongcalls -nostdlib
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 237)
@@ -5962,8 +5967,7 @@ CONFIG_BOOTLOADER_OTA_DATA_ERASE =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 292)
 CONFIG_FREERTOS_TIMER_STACKSIZE = 2048
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 480)
-APP_ELF := /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc.elf
- 
+APP_ELF := /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc-gpio.elf
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 95)
 CONFIG_PARTITION_TABLE_CUSTOM_FILENAME = "partitions.csv"
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 642)
@@ -6003,7 +6007,7 @@ ESPFLASHSIZE = $(CONFIG_ESPTOOLPY_FLASHSIZE)
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 516)
 CONFIG_MQTT_PROTOCOL_311 = y
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild', line 98)
-OTA1_BIN := ./build/esp8266-rtos-sdk-external-adc.app1.bin
+OTA1_BIN := ./build/esp8266-rtos-sdk-external-adc-gpio.app1.bin
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 92)
 CONFIG_PARTITION_TABLE_SINGLE_APP = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 521)
@@ -6035,6 +6039,7 @@ CONFIG_FMB_CONTROLLER_STACK_SIZE = 4096
 CONFIG_OPTIMIZATION_LEVEL_RELEASE = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 50)
 CONFIG_ESPTOOLPY_BAUD_921600B = 
+ 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/Makefile.projbuild', line 91)
 MONITOR_PYTHON := python
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 439)
@@ -6120,7 +6125,7 @@ CONFIG_ESP_CONSOLE_UART_CUSTOM_NUM_1 =
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild', line 80)
 CFLAGS := -std=gnu99 -Og -ggdb -Wno-frame-address -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -mlongcalls -nostdlib -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-old-style-declaration -DICACHE_FLASH -D__ESP_FILE__='"$$(subst $$(dir $$<),,$$<)"'
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild', line 99)
-OTA2_BIN := ./build/esp8266-rtos-sdk-external-adc.app2.bin
+OTA2_BIN := ./build/esp8266-rtos-sdk-external-adc-gpio.app2.bin
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 613)
 CONFIG_OPTIMIZATION_ASSERTIONS_DISABLED = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 314)
@@ -6269,8 +6274,7 @@ CONFIG_PPP_NOTIFY_PHASE_SUPPORT =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 395)
 CONFIG_LWIP_API_LIB_DEBUG = 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild', line 101)
-OTA_V2_TO_V3_BIN := ./build/esp8266-rtos-sdk-external-adc.v2_to_v3.ota.bin
- 
+OTA_V2_TO_V3_BIN := ./build/esp8266-rtos-sdk-external-adc-gpio.v2_to_v3.ota.bin
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 436)
 CONFIG_MBEDTLS_SSL_IN_CONTENT_LEN = 16384
 # environment
@@ -6358,7 +6362,8 @@ CONFIG_LWIP_TCP_SND_BUF_DEFAULT = 2880
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 567)
 CONFIG_SPIFFS_TEST_VISUALISATION = 
 # environment
-INVOCATION_ID = 58e87d91da7b4adb8e4c4b6e8bed575e
+ 
+INVOCATION_ID = 36c569b8b6d94aaf878e84cc6e7a2604
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 161)
 CONFIG_ESP8266_WIFI_AMSDU_ENABLED = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 601)
@@ -6561,7 +6566,7 @@ CONFIG_ESP_TASK_WDT_TIMEOUT_S = 15
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 453)
 CONFIG_MBEDTLS_TLS_SERVER = y
 # environment
-PLATFORMIO_PATH = /home/sheraqim/.platformio/penv/bin:/home/sheraqim/.platformio/penv:/home/sheraqim/.platformio/python3/bin:/home/sheraqim/.local/bin:/home/sheraqim/.nvm/versions/node/v16.15.0/bin:/home/sheraqim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin
+PLATFORMIO_PATH = /home/sheraqim/.platformio/penv/bin:/home/sheraqim/.platformio/penv:/home/sheraqim/.platformio/python3/bin:/home/sheraqim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 343)
 CONFIG_LWIP_AUTOIP_MAX_CONFLICTS = 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/tools/toolchain_versions.mk', line 4)
@@ -6569,9 +6574,8 @@ CURRENT_TOOLCHAIN_COMMIT_DESC = esp-2020r3-49-gd5524c1
 # default
 MAKECMDGOALS := all
 # environment
-PATH = /home/sheraqim/.local/bin:/home/sheraqim/.nvm/versions/node/v16.15.0/bin:/home/sheraqim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin
+PATH = /home/sheraqim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sheraqim/esp/xtensa-lx106-elf/bin
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 359)
- 
 CONFIG_LWIP_TCP_SACK_OUT = 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/partition_table/Makefile.projbuild', line 11)
 PARTITION_MD5_OPT := "--disable-md5sum"
@@ -6596,7 +6600,7 @@ CONFIG_ESP8266_XTAL_FREQ = 26
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 520)
 CONFIG_MQTT_USE_CUSTOM_CONFIG = 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 482)
-APP_BIN := /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc.bin
+APP_BIN := /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc-gpio.bin
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 449)
 CONFIG_MBEDTLS_TLS_SERVER_AND_CLIENT = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 141)
@@ -6627,6 +6631,8 @@ BOOTLOADER_COMPONENT_PATH := /home/sheraqim/esp/ESP8266_RTOS_SDK/components/boot
 CONFIG_LINK_ETS_PRINTF_TO_IRAM = 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 660)
 TOOLCHAIN_HEADER := xtensa-lx106-elf-gcc (crosstool-NG esp-2020r3-49-gd5524c1) 8.4.0
+# makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/partition_table/Makefile.projbuild', line 82)
+OTA_DATA_OFFSET := 
 # environment
 LC_MONETARY = az_IR
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 497)
@@ -6654,6 +6660,7 @@ CONFIG_LWIP_TCP_SYNMAXRTX = 6
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 584)
 CONFIG_WPA_MBEDTLS_CRYPTO = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 445)
+ 
 CONFIG_MBEDTLS_DEBUG_LEVEL_VERBOSE = 
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
@@ -6762,7 +6769,7 @@ IDF_PATH := /home/sheraqim/esp/ESP8266_RTOS_SDK
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 268)
 CONFIG_FMB_QUEUE_LENGTH = 20
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild', line 96)
-RAW_BIN := ./build/esp8266-rtos-sdk-external-adc.bin
+RAW_BIN := ./build/esp8266-rtos-sdk-external-adc-gpio.bin
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 280)
 CONFIG_FMB_TIMER_ISR_IN_IRAM = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 112)
@@ -6845,8 +6852,8 @@ CONFIG_LWIP_SYS_DEBUG =
 CONFIG_LWIP_TCP_OVERSIZE_MSS = y
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 188)
 CONFIG_ESP8266_WIFI_DEBUG_LOG_SUBMODULE_AMPDU = 
-# makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/partition_table/Makefile.projbuild', line 82)
-OTA_DATA_OFFSET := 
+# makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 392)
+CONFIG_LWIP_ETHARP_DEBUG = 
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 61)
 CONFIG_SPI_FLASH_MODE = 0x0
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 96)
@@ -6866,12 +6873,11 @@ SNAP_REEXEC =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 528)
 CONFIG_MQTT_TASK_PRIORITY = 
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/Makefile.projbuild', line 30)
- 
 ESPTOOLPY := python /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/esptool/esptool.py --chip esp8266
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 220)
 CONFIG_ESP_GDBSTUB_MAX_TASKS = 
 # makefile (from 'Makefile', line 6)
-PROJECT_NAME := esp8266-rtos-sdk-external-adc
+PROJECT_NAME := esp8266-rtos-sdk-external-adc-gpio
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 54)
 CONFIG_ESPTOOLPY_BAUD = 115200
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 221)
@@ -7021,6 +7027,7 @@ CONFIG_TASK_WDT_TIMEOUT_S = 15
 # makefile (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk', line 1)
 IDF_VERSION_MAJOR := 4
 # environment
+ 
 GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 663)
 CONFIG_TCP_OVERSIZE_DISABLE = 
@@ -7053,7 +7060,7 @@ CONFIG_ESP8266_WIFI_DEBUG_LOG_SUBMODULE_WPA =
 # makefile (from '/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf', line 349)
 CONFIG_LWIP_MAX_LISTENING_TCP = 16
 # variable set hash-table stats:
-# Load=978/2048=48%, Rehash=1, Collisions=6976/5542=126%
+# Load=979/2048=48%, Rehash=1, Collisions=7030/5543=127%
 
 # Pattern-specific Variable Values
 
@@ -7103,7 +7110,7 @@ make_prepare: partition_table_get_info
 # Not a target:
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-30 15:43:55.346137045
+#  Last modified 2022-05-31 15:29:45.15142887
 #  File has been updated.
 #  Successfully updated.
 
@@ -7188,7 +7195,7 @@ config-clean: app-clean bootloader-clean
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mqtt/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mqtt/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mqtt
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.272774217
+#  Last modified 2022-06-02 11:36:55.293054653
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7201,7 +7208,6 @@ component-wpa_supplicant-build: check-submodules make_prepare | /home/sheraqim/e
 #  File has not been updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wpa_supplicant -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/component.mk COMPONENT_NAME=wpa_supplicant build
- 
 
 # Not a target:
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/nvs_flash/component.mk:
@@ -7225,7 +7231,7 @@ component-wpa_supplicant-build: check-submodules make_prepare | /home/sheraqim/e
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/openssl:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:42.49270435
+#  Last modified 2022-05-31 16:55:32.457382046
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7240,7 +7246,7 @@ component-wpa_supplicant-build: check-submodules make_prepare | /home/sheraqim/e
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp-tls:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:08.840986783
+#  Last modified 2022-05-31 16:53:39.778551754
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7253,7 +7259,7 @@ component-wpa_supplicant-build: check-submodules make_prepare | /home/sheraqim/e
 #  File has been updated.
 #  Successfully updated.
 
-ota: build/esp8266-rtos-sdk-external-adc.ota.bin
+ota: build/esp8266-rtos-sdk-external-adc-gpio.ota.bin
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -7264,7 +7270,7 @@ ota: build/esp8266-rtos-sdk-external-adc.ota.bin
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/newlib:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:40.392722045
+#  Last modified 2022-05-31 16:55:28.41342405
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7311,7 +7317,7 @@ ota: build/esp8266-rtos-sdk-external-adc.ota.bin
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/coap:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 13:27:54.303046052
+#  Last modified 2022-05-31 16:53:38.762562297
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7326,7 +7332,7 @@ ota: build/esp8266-rtos-sdk-external-adc.ota.bin
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/jsmn/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/jsmn/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/jsmn
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.392773206
+#  Last modified 2022-06-02 11:36:55.689045376
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7334,7 +7340,7 @@ ota: build/esp8266-rtos-sdk-external-adc.ota.bin
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_ram:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:43.688694269
+#  Last modified 2022-05-31 16:55:34.237363558
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7349,6 +7355,7 @@ ota: build/esp8266-rtos-sdk-external-adc.ota.bin
 
 component-mqtt-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mqtt /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mqtt/component_project_vars.mk
 #  Phony target (prerequisite of .PHONY).
+ 
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
@@ -7365,7 +7372,7 @@ component-heap-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/bu
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_gdbstub:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:12.040960031
+#  Last modified 2022-05-31 16:53:43.190516358
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7387,7 +7394,7 @@ component-heap-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/bu
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcp_transport:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:45.224681318
+#  Last modified 2022-05-31 16:55:36.369341412
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7441,7 +7448,7 @@ component-bootloader_support-clean: | /home/sheraqim/esp/projects/esp8266-rtos-s
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freertos:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:17.360915505
+#  Last modified 2022-05-31 16:53:48.942456681
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7461,7 +7468,7 @@ all: all_binaries blank_ota_data | check_python_dependencies
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/lwip:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:31.540796529
+#  Last modified 2022-05-31 16:54:04.566294563
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7476,7 +7483,7 @@ all: all_binaries blank_ota_data | check_python_dependencies
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_common:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:11.36896565
+#  Last modified 2022-05-31 16:53:42.574522749
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7484,8 +7491,7 @@ all: all_binaries blank_ota_data | check_python_dependencies
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/http_parser/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/http_parser/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/http_parser
 #  Implicit rule search has not been done.
- 
-#  Last modified 2022-05-31 10:03:55.400773139
+#  Last modified 2022-06-02 11:36:55.709044908
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7493,7 +7499,7 @@ all: all_binaries blank_ota_data | check_python_dependencies
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/vfs:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:45.948675213
+#  Last modified 2022-05-31 16:55:37.245332312
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7508,9 +7514,17 @@ partition_table-flash: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/bui
 	@echo "Flashing partition table..."
 	$(PARTITION_TABLE_FLASH_CMD)
 
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc-gpio.elf: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/app_update/libapp_update.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader_support/libbootloader_support.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/coap/libcoap.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/console/libconsole.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp-tls/libesp-tls.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp-wolfssl/libesp-wolfssl.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266/libesp8266.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_common/libesp_common.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_event/libesp_event.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_gdbstub/libesp_gdbstub.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_client/libesp_http_client.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_server/libesp_http_server.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_https_ota/libesp_https_ota.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_ringbuf/libesp_ringbuf.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/fatfs/libfatfs.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freemodbus/libfreemodbus.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freertos/libfreertos.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/gpio-configurations/libgpio-configurations.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/heap/libheap.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/http_parser/libhttp_parser.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/jsmn/libjsmn.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/json/libjson.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/libsodium/liblibsodium.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/log/liblog.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/lwip/liblwip.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/main/libmain.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mbedtls/libmbedtls.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mdns/libmdns.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mqtt/libmqtt.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/newlib/libnewlib.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/nvs_flash/libnvs_flash.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/openssl/libopenssl.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protobuf-c/libprotobuf-c.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protocomm/libprotocomm.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/pthread/libpthread.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_flash/libspi_flash.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_ram/libspi_ram.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spiffs/libspiffs.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcp_transport/libtcp_transport.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcpip_adapter/libtcpip_adapter.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/vfs/libvfs.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wear_levelling/libwear_levelling.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wifi_provisioning/libwifi_provisioning.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wpa_supplicant/libwpa_supplicant.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libhal.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libnet80211.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libphy.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/librtc.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libclk.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libpp.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libsmartconfig.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libssc.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libespnow.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/ld/esp8266.rom.ld /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/ld/esp8266.peripherals.ld /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266/esp8266.project.ld /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/app_update/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader_support/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/coap/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/console/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp-tls/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp-wolfssl/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_common/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_event/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_gdbstub/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_client/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_server/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_https_ota/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_ringbuf/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esptool_py/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/fatfs/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freemodbus/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freertos/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/gpio-configurations/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/heap/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/http_parser/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/jsmn/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/json/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/libsodium/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/log/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/lwip/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/main/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mbedtls/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mdns/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mqtt/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/newlib/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/nvs_flash/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/openssl/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/partition_table/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protobuf-c/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protocomm/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/pthread/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_flash/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_ram/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spiffs/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcp_transport/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcpip_adapter/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/vfs/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wear_levelling/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wifi_provisioning/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wpa_supplicant/component_project_vars.mk
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 509):
+	$(summary) LD $(patsubst $(PWD)/%,%,$@)
+	$(CC) $(LDFLAGS) -o $@ -Wl,-Map=$(APP_MAP)
+
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/log/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/log
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.348773576
+#  Last modified 2022-06-02 11:36:55.573048093
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7539,7 +7553,7 @@ component-jsmn-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/bu
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/heap:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:17.520914164
+#  Last modified 2022-05-31 16:53:49.090455146
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7547,7 +7561,7 @@ component-jsmn-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/bu
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_gdbstub/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_gdbstub/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_gdbstub
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.572771688
+#  Last modified 2022-06-02 11:36:55.973038723
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7560,14 +7574,6 @@ component-esp_http_client-build: check-submodules make_prepare | /home/sheraqim/
 #  File has not been updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_client -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_http_client/component.mk COMPONENT_NAME=esp_http_client build
-
-build/esp8266-rtos-sdk-external-adc.ota.bin: build/esp8266-rtos-sdk-external-adc.app2.bin
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild', line 137):
-	@cp $(OTA1_BIN) $(OTA_BIN)
-	@echo [GEN] $(OTA_BIN)
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266/libesp8266.a: component-esp8266-build
 #  Implicit rule search has not been done.
@@ -7590,7 +7596,7 @@ build/esp8266-rtos-sdk-external-adc.ota.bin: build/esp8266-rtos-sdk-external-adc
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	@true "Target '$^' responsible for '$@'" # echo which build target built this file
 
-all_binaries: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/bootloader.bin /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/partitions_singleapp.bin partition_table_get_info /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc.bin
+all_binaries: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/bootloader.bin /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/partitions_singleapp.bin partition_table_get_info /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc-gpio.bin
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -7629,7 +7635,7 @@ component-openssl-build: check-submodules make_prepare | /home/sheraqim/esp/proj
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/gpio-configurations:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 13:28:03.966958953
+#  Last modified 2022-05-31 16:53:48.950456599
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7652,7 +7658,8 @@ component-http_parser-build: check-submodules make_prepare | /home/sheraqim/esp/
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp-tls/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp-tls/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp-tls
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.668770879
+ 
+#  Last modified 2022-06-02 11:36:56.061036665
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7660,7 +7667,7 @@ component-http_parser-build: check-submodules make_prepare | /home/sheraqim/esp/
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freemodbus:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:16.552922271
+#  Last modified 2022-05-31 16:53:48.078465647
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7689,7 +7696,6 @@ simple_monitor:
 	$(MONITOR_PYTHON) -m serial.tools.miniterm --rts 0 --dtr 0 --raw $(ESPPORT) $(MONITORBAUD)
 
 component-log-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/log /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/log/component_project_vars.mk
- 
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -7699,7 +7705,7 @@ component-log-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/bui
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:07.089001423
+#  Last modified 2022-05-31 16:53:37.874571506
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7742,7 +7748,7 @@ monitor:
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader_support/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader_support/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader_support
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.704770575
+#  Last modified 2022-06-02 11:36:56.12503517
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7750,7 +7756,7 @@ monitor:
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/libsodium:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:25.604846386
+#  Last modified 2022-05-31 16:53:57.954363174
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7807,6 +7813,14 @@ partition_table_get_info: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/
 							get_partition_info --partition-type app --partition-subtype ota_1 --info size))
 	$(eval CFLAGS += -DAPP_OFFSET=$(APP_OFFSET) -DAPP_SIZE=$(APP_SIZE))
 
+build/esp8266-rtos-sdk-external-adc-gpio.app2.bin: build/esp8266-rtos-sdk-external-adc-gpio.app1.bin
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild', line 133):
+	@cp $(RAW_BIN) $(OTA2_BIN)
+	@echo [GEN] $(OTA2_BIN)
+
 # Not a target:
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/components/gpio-configurations/component.mk:
 #  Implicit rule search has been done.
@@ -7845,7 +7859,7 @@ component-nvs_flash-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-exampl
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spiffs:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:44.764685197
+#  Last modified 2022-05-31 16:55:35.649348893
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7888,7 +7902,7 @@ component-esp_https_ota-build: check-submodules make_prepare | /home/sheraqim/es
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/sdkconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/app_update/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/coap/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp-tls/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp-wolfssl/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_event/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_gdbstub/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_http_client/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_http_server/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_https_ota/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/fatfs/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freemodbus/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/heap/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/libsodium/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/lwip/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mbedtls/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mdns/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mqtt/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/newlib/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/openssl/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/pthread/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spiffs/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/vfs/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/wear_levelling/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/wifi_provisioning/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/Kconfig /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/Kconfig.projbuild /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/Kconfig.projbuild /home/sheraqim/esp/ESP8266_RTOS_SDK/components/partition_table/Kconfig.projbuild | check_python_dependencies
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:54.948776949
+#  Last modified 2022-06-02 11:36:53.165104654
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -7919,6 +7933,7 @@ bootloader-list-components:
 #  Implicit rule search has been done.
 #  Last modified 2022-05-29 10:37:56.457216263
 #  File has been updated.
+ 
 #  Successfully updated.
 
 component-nvs_flash-build: check-submodules make_prepare | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/nvs_flash
@@ -7947,7 +7962,7 @@ component-json-build: check-submodules make_prepare | /home/sheraqim/esp/project
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/app_update:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:07.492998046
+#  Last modified 2022-05-31 16:53:38.24656765
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -7955,7 +7970,6 @@ component-json-build: check-submodules make_prepare | /home/sheraqim/esp/project
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/coap/libcoap.a: component-coap-build
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8025,7 +8039,7 @@ component-pthread-build: check-submodules make_prepare | /home/sheraqim/esp/proj
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_ringbuf:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:13.348949089
+#  Last modified 2022-05-31 16:53:44.654501171
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8063,20 +8077,11 @@ app2-flash: app2
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/newlib/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/newlib/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/newlib
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.256774353
+#  Last modified 2022-06-02 11:36:55.261055401
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/newlib -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/newlib/component.mk COMPONENT_NAME=newlib component_project_vars.mk
-
-build/esp8266-rtos-sdk-external-adc.app1.bin: all_binaries
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild', line 124):
-	@cp $(RAW_BIN) $(RAW_BIN).old
-	@cp $(RAW_BIN) $(OTA1_BIN)
-	@echo [GEN] $(OTA1_BIN)
 
 component-vfs-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/vfs /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/vfs/component_project_vars.mk
 #  Phony target (prerequisite of .PHONY).
@@ -8089,7 +8094,7 @@ component-vfs-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/bui
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-30 15:43:55.346137045
+#  Last modified 2022-05-31 15:29:45.15142887
 #  File has been updated.
 #  Successfully updated.
 
@@ -8116,7 +8121,7 @@ component-esp_event-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-exampl
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wear_levelling:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:46.468670827
+#  Last modified 2022-05-31 16:55:37.873325791
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8159,7 +8164,7 @@ component-main-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/bu
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_event/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_event/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_event
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.580771621
+#  Last modified 2022-06-02 11:36:55.989038348
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8172,7 +8177,7 @@ component-main-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/bu
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	@true "Target '$^' responsible for '$@'" # echo which build target built this file
 
-app: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc.bin partition_table_get_info
+app: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc-gpio.bin partition_table_get_info
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -8203,7 +8208,7 @@ component-partition_table-build: check-submodules make_prepare | /home/sheraqim/
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_ram/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_ram/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_ram
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.168775094
+#  Last modified 2022-06-02 11:36:54.661069476
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8225,7 +8230,6 @@ component-freemodbus-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examp
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freemodbus -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/freemodbus/component.mk COMPONENT_NAME=freemodbus clean
 
- 
 check-submodules: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/json/cJSON/.git /home/sheraqim/esp/ESP8266_RTOS_SDK/components/lwip/lwip/.git /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/.git /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/.git
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -8234,7 +8238,7 @@ check-submodules: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/json/cJSON/.git
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcp_transport/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/tcp_transport/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcp_transport
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.136775363
+#  Last modified 2022-06-02 11:36:54.489073516
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8246,6 +8250,7 @@ check-submodules: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/json/cJSON/.git
 #  Last modified 2022-05-29 10:37:56.513213256
 #  File has been updated.
 #  Successfully updated.
+ 
 
 component-esp_http_server-build: check-submodules make_prepare | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_server
 #  Phony target (prerequisite of .PHONY).
@@ -8257,7 +8262,7 @@ component-esp_http_server-build: check-submodules make_prepare | /home/sheraqim/
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.636771148
+#  Last modified 2022-06-02 11:36:56.037037227
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8280,7 +8285,7 @@ defconfig: | check_python_dependencies
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freertos/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freertos
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.444772767
+#  Last modified 2022-06-02 11:36:55.813042471
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8333,7 +8338,7 @@ component-spi_ram-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/vfs/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/vfs/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/vfs
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.068775937
+#  Last modified 2022-06-02 11:36:54.381076052
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8349,7 +8354,7 @@ component-tcpip_adapter-build: check-submodules make_prepare | /home/sheraqim/es
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_common/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_common
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.59277152
+#  Last modified 2022-06-02 11:36:56.001038068
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8400,7 +8405,7 @@ check_python_dependencies:
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protobuf-c:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:42.964700372
+#  Last modified 2022-05-31 16:55:33.201374318
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8430,7 +8435,7 @@ component-console-build: check-submodules make_prepare | /home/sheraqim/esp/proj
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_flash/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_flash/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_flash
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.176775027
+#  Last modified 2022-06-02 11:36:54.713068255
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8456,14 +8461,6 @@ component-console-build: check-submodules make_prepare | /home/sheraqim/esp/proj
 #  Modification time never checked.
 #  File has not been updated.
 
-/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc.elf: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/app_update/libapp_update.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader_support/libbootloader_support.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/coap/libcoap.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/console/libconsole.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp-tls/libesp-tls.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp-wolfssl/libesp-wolfssl.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266/libesp8266.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_common/libesp_common.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_event/libesp_event.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_gdbstub/libesp_gdbstub.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_client/libesp_http_client.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_server/libesp_http_server.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_https_ota/libesp_https_ota.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_ringbuf/libesp_ringbuf.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/fatfs/libfatfs.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freemodbus/libfreemodbus.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freertos/libfreertos.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/gpio-configurations/libgpio-configurations.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/heap/libheap.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/http_parser/libhttp_parser.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/jsmn/libjsmn.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/json/libjson.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/libsodium/liblibsodium.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/log/liblog.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/lwip/liblwip.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/main/libmain.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mbedtls/libmbedtls.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mdns/libmdns.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mqtt/libmqtt.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/newlib/libnewlib.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/nvs_flash/libnvs_flash.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/openssl/libopenssl.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protobuf-c/libprotobuf-c.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protocomm/libprotocomm.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/pthread/libpthread.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_flash/libspi_flash.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_ram/libspi_ram.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spiffs/libspiffs.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcp_transport/libtcp_transport.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcpip_adapter/libtcpip_adapter.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/vfs/libvfs.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wear_levelling/libwear_levelling.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wifi_provisioning/libwifi_provisioning.a /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wpa_supplicant/libwpa_supplicant.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libhal.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libnet80211.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libphy.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/librtc.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libclk.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libpp.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libsmartconfig.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libssc.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libespnow.a /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/ld/esp8266.rom.ld /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/ld/esp8266.peripherals.ld /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266/esp8266.project.ld /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/app_update/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader_support/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/coap/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/console/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp-tls/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp-wolfssl/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_common/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_event/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_gdbstub/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_client/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_server/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_https_ota/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_ringbuf/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esptool_py/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/fatfs/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freemodbus/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freertos/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/gpio-configurations/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/heap/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/http_parser/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/jsmn/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/json/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/libsodium/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/log/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/lwip/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/main/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mbedtls/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mdns/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mqtt/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/newlib/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/nvs_flash/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/openssl/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/partition_table/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protobuf-c/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protocomm/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/pthread/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_flash/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_ram/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spiffs/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcp_transport/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcpip_adapter/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/vfs/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wear_levelling/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wifi_provisioning/component_project_vars.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wpa_supplicant/component_project_vars.mk
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 509):
-	$(summary) LD $(patsubst $(PWD)/%,%,$@)
-	$(CC) $(LDFLAGS) -o $@ -Wl,-Map=$(APP_MAP)
-
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/nvs_flash/libnvs_flash.a: component-nvs_flash-build
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -8485,14 +8482,13 @@ component-lwip-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/bu
 #  Modification time never checked.
 #  File has not been updated.
 
-size-files: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc.elf | check_python_dependencies
+size-files: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc-gpio.elf | check_python_dependencies
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 582):
 	$(PYTHON) $(IDF_PATH)/tools/idf_size.py --files $(APP_MAP)
- 
 
 # Not a target:
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/linker.lf:
@@ -8500,7 +8496,7 @@ size-files: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-
 #  Modification time never checked.
 #  File has not been updated.
 
-size: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc.elf | check_python_dependencies
+size: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc-gpio.elf | check_python_dependencies
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -8517,7 +8513,7 @@ size: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-s
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/bootloader/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.708770541
+#  Last modified 2022-06-02 11:36:56.129035077
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8538,6 +8534,7 @@ size: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-s
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/.git:
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 630):
@@ -8562,9 +8559,17 @@ component-wifi_provisioning-build: check-submodules make_prepare | /home/sheraqi
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	@true "Target '$^' responsible for '$@'" # echo which build target built this file
 
+build/esp8266-rtos-sdk-external-adc-gpio.ota.bin: build/esp8266-rtos-sdk-external-adc-gpio.app2.bin
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild', line 137):
+	@cp $(OTA1_BIN) $(OTA_BIN)
+	@echo [GEN] $(OTA_BIN)
+
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/libsodium/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/libsodium/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/libsodium
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.372773374
+#  Last modified 2022-06-02 11:36:55.661046031
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8579,7 +8584,7 @@ ldgen-clean:
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp-wolfssl:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 13:27:55.251037519
+#  Last modified 2022-05-31 16:53:39.782551713
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8645,7 +8650,7 @@ component-coap-build: check-submodules make_prepare | /home/sheraqim/esp/project
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esptool_py/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esptool_py
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.492772362
+#  Last modified 2022-06-02 11:36:55.881040879
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8653,7 +8658,7 @@ component-coap-build: check-submodules make_prepare | /home/sheraqim/esp/project
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spiffs/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spiffs/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spiffs
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.152775229
+#  Last modified 2022-06-02 11:36:54.613070603
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8712,14 +8717,6 @@ help:
 	@echo "See also 'make bootloader', 'make bootloader-flash', 'make bootloader-clean', "
 	@echo "'make partition_table', etc, etc."
 
-/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wpa_supplicant:
-#  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:54.552602566
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
-	@mkdir -p /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wpa_supplicant
-
 # Not a target:
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/newlib/component.mk:
 #  Implicit rule search has been done.
@@ -8735,7 +8732,7 @@ help:
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/pthread:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:43.244698012
+#  Last modified 2022-05-31 16:55:33.593370249
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8743,8 +8740,7 @@ help:
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wifi_provisioning:
 #  Implicit rule search has not been done.
- 
-#  Last modified 2022-05-30 13:28:34.058685844
+#  Last modified 2022-05-31 16:55:37.877325747
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8773,13 +8769,13 @@ erase_otadata: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/partition_table/pa
 #  Modification time never checked.
 #  File has not been updated.
 
-build/esp8266-rtos-sdk-external-adc.app2.bin: build/esp8266-rtos-sdk-external-adc.app1.bin
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wpa_supplicant:
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild', line 133):
-	@cp $(RAW_BIN) $(OTA2_BIN)
-	@echo [GEN] $(OTA2_BIN)
+#  Last modified 2022-05-31 16:55:47.221228681
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
+	@mkdir -p /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wpa_supplicant
 
 # Not a target:
 /home/sheraqim/esp/ESP8266_RTOS_SDK/tools/kconfig/util.c:
@@ -8810,6 +8806,7 @@ component-protocomm-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-exampl
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protocomm -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/protocomm/component.mk COMPONENT_NAME=protocomm clean
 
+ 
 # Not a target:
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/Makefile.projbuild:
 #  Implicit rule search has been done.
@@ -8834,7 +8831,7 @@ component-spiffs-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/nvs_flash:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:42.008708431
+#  Last modified 2022-05-31 16:55:31.69738994
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8842,7 +8839,7 @@ component-spiffs-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_https_ota:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:13.212950226
+#  Last modified 2022-05-31 16:53:44.506502705
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8886,7 +8883,7 @@ component-esp_ringbuf-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-exam
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:11.26496652
+#  Last modified 2022-05-31 16:55:47.60922465
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8900,7 +8897,7 @@ component-esp_ringbuf-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-exam
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_ringbuf/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_ringbuf/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_ringbuf
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.520772127
+#  Last modified 2022-06-02 11:36:55.889040692
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8959,7 +8956,7 @@ component-wifi_provisioning-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sd
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/partition_table:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 13:27:51.863067996
+#  Last modified 2022-05-31 16:53:36.494585823
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8980,7 +8977,7 @@ component-wifi_provisioning-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sd
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcpip_adapter/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcpip_adapter
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.1207755
+#  Last modified 2022-06-02 11:36:54.46507408
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -8988,7 +8985,7 @@ component-wifi_provisioning-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sd
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/heap/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/heap/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/heap
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.412773036
+#  Last modified 2022-06-02 11:36:55.729044439
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9002,7 +8999,7 @@ component-wifi_provisioning-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sd
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wear_levelling/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/wear_levelling/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wear_levelling
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.048776106
+#  Last modified 2022-06-02 11:36:54.273078588
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9010,8 +9007,7 @@ component-wifi_provisioning-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sd
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freemodbus/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freemodbus/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/freemodbus
 #  Implicit rule search has not been done.
- 
-#  Last modified 2022-05-31 10:03:55.464772599
+#  Last modified 2022-06-02 11:36:55.865041254
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9023,7 +9019,7 @@ component-wifi_provisioning-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sd
 #  Modification time never checked.
 #  File has not been updated.
 
-size-symbols: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc.elf | check_python_dependencies
+size-symbols: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc-gpio.elf | check_python_dependencies
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -9048,7 +9044,7 @@ component-newlib-build: check-submodules make_prepare | /home/sheraqim/esp/proje
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/pthread/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/pthread/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/pthread
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.18477496
+#  Last modified 2022-06-02 11:36:54.857064874
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9063,7 +9059,7 @@ component-newlib-build: check-submodules make_prepare | /home/sheraqim/esp/proje
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mbedtls:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:39.408730333
+#  Last modified 2022-05-31 16:55:26.789440921
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9077,6 +9073,13 @@ component-gpio-configurations-build: check-submodules make_prepare | /home/shera
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/gpio-configurations -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/components/gpio-configurations/component.mk COMPONENT_NAME=gpio-configurations build
 
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc-gpio.bin: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc-gpio.elf /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/esptool/esptool.py
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/Makefile.projbuild', line 72):
+	$(ESPTOOLPY) elf2image $(ESPTOOL_FLASH_OPTIONS) $(ESPTOOL_ELF2IMAGE_OPTIONS) -o $@ $<
+
 # Not a target:
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_flash/linker.lf:
 #  Implicit rule search has not been done.
@@ -9087,6 +9090,7 @@ component-mqtt-build: check-submodules make_prepare | /home/sheraqim/esp/project
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
+ 
 #  File has not been updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mqtt -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/mqtt/component.mk COMPONENT_NAME=mqtt build
@@ -9101,7 +9105,7 @@ component-heap-build: check-submodules make_prepare | /home/sheraqim/esp/project
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_client:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:12.500956184
+#  Last modified 2022-05-31 16:53:43.666511419
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9128,7 +9132,7 @@ partition_table: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/par
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/console:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:08.584988923
+#  Last modified 2022-05-31 16:53:39.486554785
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9157,7 +9161,7 @@ partition_table: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/par
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcpip_adapter:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:45.54467862
+#  Last modified 2022-05-31 16:55:36.769337259
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9165,7 +9169,7 @@ partition_table: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/par
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esptool_py:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 13:27:52.003066737
+#  Last modified 2022-05-31 16:53:36.650584205
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9173,7 +9177,7 @@ partition_table: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/par
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/openssl/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/openssl/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/openssl
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.228774588
+#  Last modified 2022-06-02 11:36:55.081059619
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9226,14 +9230,13 @@ bootloader-flash: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bo
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protobuf-c/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/protobuf-c/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protobuf-c
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.208774756
+#  Last modified 2022-06-02 11:36:54.985061867
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protobuf-c -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/protobuf-c/component.mk COMPONENT_NAME=protobuf-c component_project_vars.mk
 
 ota-clean:
- 
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -9352,7 +9355,7 @@ component-wear_levelling-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-e
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_client/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_http_client/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_client
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.560771789
+#  Last modified 2022-06-02 11:36:55.94503938
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9374,6 +9377,7 @@ component-log-build: check-submodules make_prepare | /home/sheraqim/esp/projects
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/log -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/component.mk COMPONENT_NAME=log build
 
+ 
 component-http_parser-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/http_parser /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/http_parser/component_project_vars.mk
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -9449,7 +9453,7 @@ clean: bootloader-clean ota-clean partition_table-clean app-clean bootloader-cle
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp-wolfssl/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp-wolfssl/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp-wolfssl
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.648771047
+#  Last modified 2022-06-02 11:36:56.049036947
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9500,7 +9504,7 @@ app2: all
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/nvs_flash/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/nvs_flash/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/nvs_flash
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.240774487
+#  Last modified 2022-06-02 11:36:55.145058118
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9523,7 +9527,7 @@ app2-flash-all: app2
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/fatfs:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:14.208941893
+#  Last modified 2022-05-31 16:53:45.606491294
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9544,7 +9548,7 @@ app2-flash-all: app2
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/app_update/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/app_update/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/app_update
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.872769159
+#  Last modified 2022-06-02 11:36:56.345030029
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9558,7 +9562,7 @@ app2-flash-all: app2
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/main:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 18:13:47.431711304
+#  Last modified 2022-05-31 17:08:45.125127984
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9566,7 +9570,7 @@ app2-flash-all: app2
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mbedtls/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mbedtls/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mbedtls
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.300773981
+#  Last modified 2022-06-02 11:36:55.421051654
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9581,12 +9585,11 @@ app2-flash-all: app2
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wifi_provisioning/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/wifi_provisioning/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wifi_provisioning
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.020776342
+#  Last modified 2022-06-02 11:36:54.185080654
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wifi_provisioning -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/wifi_provisioning/component.mk COMPONENT_NAME=wifi_provisioning component_project_vars.mk
- 
 
 component-bootloader_support-build: check-submodules make_prepare | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader_support
 #  Phony target (prerequisite of .PHONY).
@@ -9650,7 +9653,7 @@ component-wear_levelling-build: check-submodules make_prepare | /home/sheraqim/e
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/lwip/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/lwip/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/lwip
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.336773681
+#  Last modified 2022-06-02 11:36:55.561048375
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9658,7 +9661,8 @@ component-wear_levelling-build: check-submodules make_prepare | /home/sheraqim/e
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wpa_supplicant/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/wpa_supplicant
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:54.988776611
+ 
+#  Last modified 2022-06-02 11:36:54.173080936
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -9675,7 +9679,7 @@ component-wear_levelling-build: check-submodules make_prepare | /home/sheraqim/e
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_https_ota/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_https_ota/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_https_ota
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.540771959
+#  Last modified 2022-06-02 11:36:55.90104041
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9737,7 +9741,7 @@ component-vfs-build: check-submodules make_prepare | /home/sheraqim/esp/projects
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_event:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:11.800962038
+#  Last modified 2022-05-31 16:53:43.006518268
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9751,7 +9755,7 @@ component-vfs-build: check-submodules make_prepare | /home/sheraqim/esp/projects
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/partition_table/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/partition_table/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/partition_table
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.212774723
+#  Last modified 2022-06-02 11:36:54.997061586
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9790,7 +9794,7 @@ read_otadata: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/partition_table/par
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/json:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:18.364907096
+#  Last modified 2022-05-31 16:53:50.30644253
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9805,7 +9809,7 @@ read_otadata: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/partition_table/par
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mqtt:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:39.968725616
+#  Last modified 2022-05-31 16:55:27.737431072
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9827,8 +9831,7 @@ read_otadata: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/partition_table/par
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mdns:
 #  Implicit rule search has not been done.
- 
-#  Last modified 2022-05-30 13:28:26.4347553
+#  Last modified 2022-05-31 16:55:26.797440836
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9850,7 +9853,7 @@ component-newlib-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mdns/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/mdns/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/mdns
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.280774149
+#  Last modified 2022-06-02 11:36:55.305054371
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9920,6 +9923,7 @@ component-partition_table-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/heap/libheap.a: component-heap-build
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	@true "Target '$^' responsible for '$@'" # echo which build target built this file
@@ -9942,7 +9946,7 @@ component-esptool_py-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examp
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/jsmn:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:17.92491078
+#  Last modified 2022-05-31 16:53:49.606449794
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -9977,7 +9981,7 @@ component-esp_common-build: check-submodules make_prepare | /home/sheraqim/esp/p
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_common -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/component.mk COMPONENT_NAME=esp_common build
 
-app-flash: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc.bin /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/esptool/esptool.py
+app-flash: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc-gpio.bin /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/esptool/esptool.py
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -10011,7 +10015,7 @@ component-spi_ram-build: check-submodules make_prepare | /home/sheraqim/esp/proj
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/gpio-configurations/component_project_vars.mk: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/components/gpio-configurations/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/gpio-configurations
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.420772969
+#  Last modified 2022-06-02 11:36:55.749043971
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -10019,7 +10023,7 @@ component-spi_ram-build: check-submodules make_prepare | /home/sheraqim/esp/proj
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/console/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/console/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/console
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.680770778
+#  Last modified 2022-06-02 11:36:56.085036105
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -10041,7 +10045,7 @@ component-spi_ram-build: check-submodules make_prepare | /home/sheraqim/esp/proj
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_server/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_http_server/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_server
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.552771856
+#  Last modified 2022-06-02 11:36:55.917040035
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -10089,11 +10093,10 @@ component-tcpip_adapter-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-ex
 #  File has not been updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/tcpip_adapter -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/component.mk COMPONENT_NAME=tcpip_adapter clean
- 
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protocomm/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/protocomm/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protocomm
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.200774823
+#  Last modified 2022-06-02 11:36:54.877064403
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -10116,7 +10119,7 @@ component-protocomm-build: check-submodules make_prepare | /home/sheraqim/esp/pr
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/log:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:25.680845749
+#  Last modified 2022-05-31 16:53:58.070361971
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -10147,7 +10150,7 @@ component-json-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/bu
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/http_parser:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:17.864911283
+#  Last modified 2022-05-31 16:53:49.458451328
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -10185,6 +10188,7 @@ component-console-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples
 build-components:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
+ 
 #  File does not exist.
 #  File has not been updated.
 
@@ -10198,7 +10202,7 @@ component-lwip-build: check-submodules make_prepare | /home/sheraqim/esp/project
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_flash:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:43.476696057
+#  Last modified 2022-05-31 16:55:33.953366508
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -10213,7 +10217,7 @@ component-lwip-build: check-submodules make_prepare | /home/sheraqim/esp/project
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_http_server:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:13.148950762
+#  Last modified 2022-05-31 16:53:44.426503534
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -10261,7 +10265,7 @@ component-spi_flash-build: check-submodules make_prepare | /home/sheraqim/esp/pr
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/protocomm:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 13:28:30.44271881
+#  Last modified 2022-05-31 16:55:33.209374236
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -10289,7 +10293,7 @@ component-spi_flash-build: check-submodules make_prepare | /home/sheraqim/esp/pr
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/bootloader_support:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-30 16:10:07.944994269
+#  Last modified 2022-05-31 16:53:38.758562337
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -10303,7 +10307,7 @@ component-spi_flash-build: check-submodules make_prepare | /home/sheraqim/esp/pr
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/coap/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/coap/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/coap
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.692770676
+#  Last modified 2022-06-02 11:36:56.097035823
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -10320,14 +10324,6 @@ component-spi_flash-build: check-submodules make_prepare | /home/sheraqim/esp/pr
 	@echo "Attempting 'git submodule update --init components/mqtt/esp-mqtt' in esp-idf root directory..."
 	cd /home/sheraqim/esp/ESP8266_RTOS_SDK && git submodule update --init components/mqtt/esp-mqtt
 
-/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc.bin: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc.elf /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/esptool/esptool.py
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esptool_py/Makefile.projbuild', line 72):
-	$(ESPTOOLPY) elf2image $(ESPTOOL_FLASH_OPTIONS) $(ESPTOOL_ELF2IMAGE_OPTIONS) -o $@ $<
-
- 
 component-esptool_py-build: check-submodules make_prepare | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esptool_py
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -10338,13 +10334,13 @@ component-esptool_py-build: check-submodules make_prepare | /home/sheraqim/esp/p
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/fatfs/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/fatfs/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/fatfs
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.480772463
+#  Last modified 2022-06-02 11:36:55.877040972
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/fatfs -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/fatfs/component.mk COMPONENT_NAME=fatfs component_project_vars.mk
 
-size-components: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc.elf | check_python_dependencies
+size-components: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266-rtos-sdk-external-adc-gpio.elf | check_python_dependencies
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -10392,7 +10388,7 @@ component-coap-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/bu
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/main/component_project_vars.mk: /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/main/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/main
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.308773914
+#  Last modified 2022-06-02 11:36:55.48905006
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -10420,7 +10416,7 @@ component-coap-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/bu
 
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/json/component_project_vars.mk: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/json/component.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/common.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/version.mk /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/Makefile /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/config/auto.conf | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/json
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 10:03:55.380773307
+#  Last modified 2022-06-02 11:36:55.677045658
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
@@ -10449,6 +10445,15 @@ component-spiffs-build: check-submodules make_prepare | /home/sheraqim/esp/proje
 #  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/make/project.mk', line 571):
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spiffs -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/spiffs/component.mk COMPONENT_NAME=spiffs build
 
+build/esp8266-rtos-sdk-external-adc-gpio.app1.bin: all_binaries
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild', line 124):
+	@cp $(RAW_BIN) $(RAW_BIN).old
+	@cp $(RAW_BIN) $(OTA1_BIN)
+	@echo [GEN] $(OTA1_BIN)
+
 /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp8266/esp8266.project.ld: /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/ld/esp8266.project.ld.in /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/ld/esp8266_fragments.lf /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/ld/esp8266_bss_fragments.lf /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/linker.lf /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/linker.lf /home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/linker.lf /home/sheraqim/esp/ESP8266_RTOS_SDK/components/lwip/linker.lf /home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_flash/linker.lf /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/sdkconfig /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/ldgen_libraries
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -10470,6 +10475,7 @@ component-spiffs-build: check-submodules make_prepare | /home/sheraqim/esp/proje
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 component-esp_ringbuf-build: check-submodules make_prepare | /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/esp_ringbuf
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -10487,21 +10493,21 @@ component-spi_flash-clean: | /home/sheraqim/esp/projects/esp8266-rtos-sdk-exampl
 	+make -C /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/spi_flash -f /home/sheraqim/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/sheraqim/esp/ESP8266_RTOS_SDK/components/spi_flash/component.mk COMPONENT_NAME=spi_flash clean
 
 # files hash-table stats:
-# Load=437/1024=43%, Rehash=0, Collisions=541/1968=27%
+# Load=437/1024=43%, Rehash=0, Collisions=530/1968=27%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 4 (3) / strings = 542 / storage = 26603 B / avg = 49 B
-# current buf: size = 8162 B / used = 2188 B / count = 39 / avg = 56 B
-# other used: total = 24415 B / count = 503 / avg = 48 B
-# other free: total = 71 B / max = 26 B / min = 19 B / avg = 23 B
+# strcache buffers: 4 (3) / strings = 542 / storage = 26628 B / avg = 49 B
+# current buf: size = 8162 B / used = 2214 B / count = 40 / avg = 55 B
+# other used: total = 24414 B / count = 502 / avg = 48 B
+# other free: total = 72 B / max = 42 B / min = 14 B / avg = 24 B
 
 # strcache performance: lookups = 2186 / hit rate = 75%
 # hash-table stats:
 # Load=542/8192=7%, Rehash=0, Collisions=122/2186=6%
-# Finished Make data base on Tue May 31 10:04:22 2022
+# Finished Make data base on Thu Jun  2 11:37:21 2022
 
  
