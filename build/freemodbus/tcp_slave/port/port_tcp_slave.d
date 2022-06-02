@@ -3,7 +3,7 @@ tcp_slave/port/port_tcp_slave.o: \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/newlib/platform_include/sys/time.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include/esp_netif.h \
- /home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h \
+ /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_interface.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_event/include/esp_event_base.h \
@@ -97,7 +97,7 @@ tcp_slave/port/port_tcp_slave.o: \
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include/esp_netif.h:
 
-/home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h:
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h:
 

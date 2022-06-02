@@ -6,7 +6,7 @@ diskio/diskio.o: \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/fatfs/src/diskio.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/fatfs/src/ffconf.h \
- /home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h \
+ /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
@@ -51,7 +51,7 @@ diskio/diskio.o: \
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/fatfs/src/ffconf.h:
 
-/home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h:
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
 

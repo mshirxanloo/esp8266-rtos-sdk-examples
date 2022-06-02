@@ -12,7 +12,7 @@ library/ssl_lib.o: \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/openssl/include/internal/ssl_cert.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/openssl/include/internal/ssl_dbg.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/openssl/include/platform/ssl_opt.h \
- /home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h \
+ /home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/openssl/include/platform/ssl_port.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_types.h \
  /home/sheraqim/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
@@ -46,7 +46,7 @@ library/ssl_lib.o: \
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/openssl/include/platform/ssl_opt.h:
 
-/home/sheraqim/esp/projects/hello_world_2/build/include/sdkconfig.h:
+/home/sheraqim/esp/projects/esp8266-rtos-sdk-examples/build/include/sdkconfig.h:
 
 /home/sheraqim/esp/ESP8266_RTOS_SDK/components/openssl/include/platform/ssl_port.h:
 
