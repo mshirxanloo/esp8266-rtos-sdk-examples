@@ -1,1 +1,1 @@
-5cfa5c9-dirty esp8266-rtos-sdk-external-adc-g v3.4
+9ffb0b5-dirty esp8266-rtos-sdk-external-adc-g v3.4

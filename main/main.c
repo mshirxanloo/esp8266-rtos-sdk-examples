@@ -32,9 +32,6 @@ static void gpio_task() {
     vTaskSuspend(NULL);
 }
 
-
-
-
 void app_main()
 {
     initialize_adc();
@@ -45,6 +42,4 @@ void app_main()
     xTaskCreate(adc_task, "adc_task", 1024, NULL, 5, NULL);
     xTaskCreate(gpio_task, "gpio_task", 2048, NULL, 10, NULL);
 }
-
-
 
